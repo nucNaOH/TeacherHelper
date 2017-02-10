@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jiemian"
+    tools:context=".MainActivity" >
+   <TextView
+        android:background="#8866ff00"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:text="学生信息" />
+
+   <Button
+       android:id="@+id/add_class"
+       android:onClick="addclass"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/textView1"
+       android:text="添加班级" />
+
+   <ListView
+       android:id="@+id/classlist"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/add_class" >
+   </ListView>
+
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/textView1"
+       android:layout_alignBottom="@+id/textView1"
+       android:layout_alignParentRight="true"
+       android:text="一键导入" />
+
+</RelativeLayout>

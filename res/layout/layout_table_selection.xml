@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#AAFFA500"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="请在已导入的excel里\n选择要点名的表"
+        android:textColor="#FF0000FF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/table_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_top"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text=" "
+        android:textColor="#FFFF0000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bt_start_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="startCall"
+        android:layout_margin="3dp"
+        android:background="@drawable/button_select"
+        android:text="开始点名"
+        android:textSize="25sp" />
+
+    <ListView
+        android:id="@+id/lv_table_selection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bt_start_call"
+        android:layout_below="@id/table_name"
+        android:headerDividersEnabled="true" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/classname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="25dip" />
+
+    <EditText
+        android:id="@+id/ed_snumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/classname"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+         android:textSize="20dip"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:text="姓名：" />
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_sname"
+        android:layout_marginTop="15dip"
+        android:layout_toRightOf="@+id/textView3"
+        android:orientation="horizontal" >
+  
+    <RadioButton
+        android:id="@+id/man"
+        android:layout_marginLeft="20dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/classname"
+        android:text="男" />
+
+    <RadioButton
+        android:id="@+id/woman"
+        android:layout_marginLeft="80dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/man"
+        android:layout_alignBottom="@+id/man"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:text="女" />
+      </RadioGroup>
+
+    <EditText
+        android:id="@+id/ed_sphone"
+        android:inputType="phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:ems="10" />
+
+    <TextView
+         android:textSize="20dip"
+        android:textColor="#000000"
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="28dip"
+        android:text="家长电话：" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_marginTop="25dip"
+        android:text="学生电话："
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="性别："
+        android:textColor="#000000"
+        android:textSize="20dip" />
+
+    <EditText
+        android:id="@+id/ed_pphone"
+        android:inputType="phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/ed_pphone"
+        android:text="家庭住址："
+        android:textColor="#000000"
+        android:textSize="20dip" />
+
+    <EditText
+        android:id="@+id/ed_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/ed_pphone"
+        android:ems="10" />
+
+    <TextView
+          android:textColor="#000000"
+        android:textSize="20sp"
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="23dp"
+        android:layout_toLeftOf="@+id/radioGroup1"
+        android:text="备注：" />
+
+    <EditText
+        android:id="@+id/ed_beizhu"
+        android:layout_marginLeft="5dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignLeft="@+id/ed_snumber"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/button1"
+        android:onClick="sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="保存" />
+
+    <EditText
+        android:id="@+id/ed_sname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/classname"
+        android:layout_below="@+id/classname"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp"
+        android:text="学号："
+        android:textColor="#000000"
+        android:textSize="20dip" />
+
+</RelativeLayout>

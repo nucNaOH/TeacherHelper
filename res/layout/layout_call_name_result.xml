@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AAFFA500"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp" >
+
+        <Button
+            android:background="@drawable/button_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:onClick="saveCallNameResult"
+            android:text="保存签到信息"
+            android:textSize="25sp" />
+
+        <Button
+            android:background="@drawable/button_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:onClick="importCallNameResult"
+            android:text="导出签到信息"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="点名结果"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/tv_absent_stu_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:text="没到的人：\n\n"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_leave_stu_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="请假的人：\n\n"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_present_stu_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="已到的人：\n\n"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jiemian"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bar"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/totalUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/info"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/userlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#FFFFFF"
+        android:drawSelectorOnTop="false"
+        android:groupIndicator="@null" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_selector"
+            android:text="@string/refresh"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

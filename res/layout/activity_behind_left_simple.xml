@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/leftBehindMenuScroll" >
+
+    <LinearLayout
+        style="@style/behindMenuScrollContent"
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:paddingTop="50dp" >
+
+        <TextView
+            android:paddingTop="60dp"
+            android:id="@+id/course"
+            style="@style/behindMenuItemLabel"
+            android:clickable="true"
+            android:onClick="course"
+            android:text="课程表"
+            android:textColor="#000000"
+            android:textSize="30dip" />
+
+        <TextView
+            android:layout_marginTop="10dip"
+            android:text="百度一下" 
+            android:textColor="#000000"
+            android:id="@+id/baidu"
+            android:clickable="true"
+            android:onClick="baidu"
+            android:textSize="30dip"
+            style="@style/behindMenuItemLabel"
+            />
+        <TextView
+             android:layout_marginTop="10dip"
+            android:text="待办事项" 
+            android:textColor="#000000"
+            android:id="@+id/wait"
+            android:clickable="true"
+            android:onClick="daiban"
+            android:textSize="30dip"
+            style="@style/behindMenuItemLabel"
+            />
+        <TextView
+             android:layout_marginTop="10dip"
+            android:text="工作通讯录" 
+            android:textColor="#000000"
+            android:id="@+id/call"
+            android:clickable="true"
+           
+            android:textSize="30dip"
+            style="@style/behindMenuItemLabel"
+            />
+        <TextView
+             android:layout_marginTop="10dip"
+            android:text="即时通信" 
+            android:textColor="#000000"
+            android:id="@+id/communication"
+            android:clickable="true"
+           
+            android:textSize="30dip"
+            style="@style/behindMenuItemLabel"
+            />
+        <TextView
+             android:layout_marginTop="10dip"
+            android:text="工作日记" 
+            android:textColor="#000000"
+            android:id="@+id/daily"
+            android:clickable="true"
+           
+            android:textSize="30dip"
+            style="@style/behindMenuItemLabel"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.teacher.helper"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- 允许应用程序打开Socket -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取网络状态信息的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 改变网络状态信息的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 获取WIFI状态信息的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 改变网络状态信息的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 向SD卡中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在SD卡中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许应用程序读取用户数据 -->
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <!-- 振动器 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.teacher.helper.WelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.teacher.helper.zhuceactivity" />
+        <activity android:name="com.teacher.helper.Enteractivity" />
+        
+        <activity android:name="com.teacher.matter.matteractivity" />
+        <activity android:name="com.teacher.matter.addmatteractivity" />
+        <activity android:name="com.teacher.matter.matterlistactivity" />
+        
+        <activity android:name="com.teacher.call.callmanageactivity" />
+        <activity android:name="com.teacher.call.addphoneactivity" />
+        <activity android:name="com.teacher.call.contactactivity" />
+        
+        <activity android:name="com.teacher.diary.dailyactivity" />
+        <activity android:name="com.teacher.diary.Dailylistactivity" />
+        <activity android:name="com.teacher.diary.detilactivity" />
+        <activity android:name="com.teacher.diary.ManagerNoteActivity" />
+        
+        <activity android:name="com.example.communication.activity.MainActivity" >
+        </activity>
+        <activity android:name="com.example.communication.activity.ChatActivity" >
+        </activity>
+        <activity android:name="com.example.communication.activity.FileActivity" >
+        </activity>
+        <activity android:name="com.example.communication.activity.BaseActivity" >
+            
+        </activity>
+        <activity android:name="com.teacher.schoolweb.schoolactivity" />
+        <activity android:name="com.teacher.schoolweb.httpactivity" />
+        
+        <activity android:name="com.teacher.family.addsInfoactivity" />
+        <activity android:name="com.teacher.family.detilsinfoactivity" />
+        <activity android:name="com.teacher.family.selectactivity" />
+        <activity android:name="com.teacher.family.sInfoactivity" />
+        
+        <activity android:name="com.student.dormitory.addsusheactivity" />
+        <activity android:name="com.student.dormitory.detailssactivity" />
+        <activity android:name="com.student.dormitory.selectactivity" />
+        <activity android:name="com.student.dormitory.susheactivity" />
+        
+        <activity android:name="com.student.money.moneyactivity" />
+        <activity android:name="com.student.money.moneylistactivity" />
+        
+        <activity android:name="com.student.leave.leaveactivity" />
+        <activity android:name="com.student.leave.add_leaveactivity" />
+        
+        <activity android:name="com.student.manage.updateinfoactivity" />
+        <activity android:name="com.student.manage.StudentlistActivity" />
+        <activity android:name="com.student.manage.StudentManageActivity" />
+        <activity android:name="com.student.manage.detilactivity" />
+        <activity android:name="com.student.manage.add_sinfoactivity" />
+        
+         <activity
+            android:name="com.example.excelParser.ImportExcelActivity"
+         android:label="导入文件">
+            </activity>
+         <activity
+            android:name="com.example.excelParser.MySDFileExplorer"
+             >
+        </activity>
+        <activity
+            android:name="com.example.excelParser.CallNameViewFlipperActivity"
+            android:label="点名" >
+        </activity>
+        <activity
+            android:name="com.example.excelParser.CallNameTableSelectActivity"
+            android:label="表名选择" >
+        </activity>
+        <activity
+            android:name="com.example.excelParser.CallNameResultActivity"
+            android:label="点名结果" >
+        </activity>
+
+        <receiver android:name="com.teacher.matter.AlarmReceiver" >
+            <intent-filter>
+                <action android:name="android.alarm.demo.action" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.pwp.activity.CalendarActivity" />
+        <activity android:name="com.pwp.activity.ScheduleView" />
+        <activity android:name="com.pwp.activity.ScheduleTypeView" />
+        <activity android:name="com.pwp.activity.ScheduleInfoView" />
+        <activity android:name="com.pwp.activity.ScheduleAll" />
+        <activity android:name="com.pwp.activity.CalendarConvert" />
+        <activity android:name="cn.edu.nuc.mycallname.mainview.MainActivity4" >
+        </activity>
+        <activity android:name="com.teacher.course.TableCourseActivity" >
+        </activity>
+        <activity android:name="com.teacher.course.CreateCourseActivity" >
+        </activity>
+        <activity android:name="com.teacher.course.DeleteCourseActivity" >
+        </activity>
+
+        <receiver android:name="com.pwp.activity.CallAlarm" />
+
+        <activity
+            android:name="com.pwp.activity.AlarmAlert"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <receiver android:name="BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

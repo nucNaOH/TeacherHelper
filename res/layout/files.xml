@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bar"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/file_title"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp" >
+
+        <TextView
+            android:id="@+id/file_pathinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/content" />
+
+        <Button
+            android:id="@+id/file_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="@string/send"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:focusable="false"  
+			android:longClickable="true" />
+
+        <TextView
+            android:id="@+id/file_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/file_send"
+            android:layout_toRightOf="@id/file_pathinfo" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/file_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:divider="@color/darkgray"
+        android:dividerHeight="1dp"
+        android:transcriptMode="alwaysScroll" />
+    
+    
+
+</LinearLayout>

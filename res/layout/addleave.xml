@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:background="#8866ff00"
+        android:gravity="center"
+        android:text="添加请假记录"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+     <TextView
+         android:id="@+id/textView2"
+          android:textSize="15dip"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/textView1"
+         android:layout_marginLeft="19dp"
+         android:layout_marginTop="14dp"
+         android:text="姓名：" />
+
+     <EditText
+         android:id="@+id/ed_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/textView2"
+         android:layout_alignBottom="@+id/textView2"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="20dp"
+         android:ems="10" >
+
+         <requestFocus />
+     </EditText>
+
+     <TextView
+         android:textSize="15dip"
+         android:id="@+id/textView3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/textView2"
+         android:layout_below="@+id/ed_name"
+         android:layout_marginTop="27dp"
+         android:text="日期：" />
+
+     <TextView
+         android:textSize="25dip"
+         android:id="@+id/date"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/textView3"
+         android:layout_below="@+id/textView3"
+         android:layout_marginTop="17dp"
+         android:clickable="true"
+            android:onClick="date"
+         android:text="从" />
+
+     <TextView
+          android:textSize="20dip"
+         android:id="@+id/tv_date"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/date"
+         android:layout_toRightOf="@+id/textView3"
+         />
+
+     <TextView
+         android:id="@+id/date2"
+          android:textSize="25dip"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/date"
+         android:layout_alignBottom="@+id/tv_date"
+         android:layout_marginLeft="23dp"
+         android:layout_toRightOf="@+id/tv_date"
+           android:onClick="time"
+            android:clickable="true"
+         android:text="至" />
+
+     <TextView
+         android:id="@+id/tv_date2"
+          android:textSize="20dip"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/date2"
+         android:layout_marginLeft="36dp"
+         android:layout_toRightOf="@+id/date2"
+         />
+
+     <TextView
+         android:id="@+id/textView8"
+          android:textSize="15dip"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/date"
+         android:layout_below="@+id/tv_date"
+         android:layout_marginTop="16dp"
+         android:text="请假原因：" />
+
+     <EditText
+         android:id="@+id/ed_why"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/textView8"
+         android:layout_marginTop="20dp"
+         android:ems="10"
+         android:gravity="top"
+         android:inputType="textMultiLine"
+         android:lines="7" />
+ <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="80dip">
+    </LinearLayout>
+
+ <Button
+     android:id="@+id/BtnSave"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentLeft="true"
+     android:onClick="save"
+     android:text="保 存"
+     android:textSize="24dip"
+     android:textStyle="bold"
+     android:width="160dip" />
+
+ <Button
+     android:id="@+id/BtnSave"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentRight="true"
+     android:onClick="empty"
+     android:text="清空"
+     android:textSize="24dip"
+     android:textStyle="bold"
+     android:width="160dip" />
+
+</RelativeLayout>

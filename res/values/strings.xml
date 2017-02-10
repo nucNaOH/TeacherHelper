@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">班主任助手</string>
+    <string name="info">当前在线0个用户</string>
+    <string name="file_title">请选择要发送的文件</string>
+    <string name="file_path">当前路径：</string>
+    <string name="send">发　送</string>
+    <string name="refresh">刷　新</string>
+    <string name="ip">127.0.0.1</string>
+    <string name="myname">我的设备</string>
+    <string name="content"></string>
+    <string name="zero">0</string>
+    <string name="receiving">文件接收中</string>
+    <string name="action_settings">文件接收中</string>
+    <string name="sendmessage">发送</string>
+    <string name="please_input_number">请输入电话号码</string>
+    <string name="please_input_content">请输入内容</string>
+    <string name="add_contacts">添加联系人</string>
+</resources>

@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/student"
+        android:layout_marginTop="150dip"
+        android:layout_width="180dip"
+        android:layout_height="150dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:onClick="rbtn"
+        android:src="@drawable/t4" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:textSize="30dip"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="温馨提示：" />
+
+    
+
+   
+    <ImageView
+        android:id="@+id/teacher"
+        android:layout_width="150dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:onClick="lbtn"
+        android:src="@drawable/t3" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="TextView" />
+
+    
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/edssnumber"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/save"
+        android:onClick="save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="保存" />
+
+    
+
+    <TextView
+        android:id="@+id/sushenumber"
+        android:layout_marginLeft="3dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edssnumber"
+        android:layout_alignBottom="@+id/edssnumber"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="10dip"
+        android:text="宿舍号：" />
+
+    <TextView
+        android:id="@+id/sushezhang"
+          android:layout_marginLeft="3dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edzhang"
+        android:layout_alignBottom="@+id/edzhang"
+        android:layout_alignParentLeft="true"
+        android:text="宿舍长：" />
+
+    <EditText
+        android:id="@+id/edzhang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edssnumber"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edchengyuan"
+        android:gravity="top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edzhang"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="7" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/sushecy"
+        android:layout_marginLeft="3dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edchengyuan"
+        android:layout_alignBottom="@+id/edchengyuan"
+        android:layout_alignParentLeft="true"
+        android:text="宿舍成员：" />
+
+</RelativeLayout>

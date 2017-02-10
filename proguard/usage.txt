@@ -1,0 +1,40 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+com.example.communication.activity.BaseActivity:
+    150:153:public static com.example.communication.activity.BaseActivity getActivity(int)
+    157:157:public static com.example.communication.activity.BaseActivity getCurrentActivity()
+    173:177:public static void sendMessage(int,java.lang.String)
+    180:182:public void exit()
+com.example.communication.activity.BuildConfig
+com.example.communication.activity.ChatActivity:
+    private static final int MENU_ITEM_SENDFILE
+    private static final int MENU_ITEM_EXIT
+com.example.communication.activity.FileActivity:
+    227:227:public java.lang.String getCurrentDirectory()
+com.example.communication.activity.R
+com.example.communication.activity.R$array
+com.example.communication.activity.R$attr
+com.example.communication.activity.R$color
+com.example.communication.activity.R$drawable
+com.example.communication.activity.R$id
+com.example.communication.activity.R$layout
+com.example.communication.activity.R$string
+com.example.communication.activity.SplashscreenActivity:
+    android.content.SharedPreferences preferences
+com.example.communication.net.NetThreadHelper:
+    98:98:public int getUserCount()
+com.example.communication.util.CommunicationConst
+com.example.communication.util.CommunicationProtocol:
+    31:38:public CommunicationProtocol(java.lang.String,java.lang.String,int,java.lang.String)
+    84:84:public java.lang.String getVersion()
+    96:97:public void setPacketNo(java.lang.String)
+com.example.communication.vo.MyMessage:
+    45:46:public void setSenderIp(java.lang.String)
+    53:54:public void setSenderName(java.lang.String)
+    61:62:public void setMsg(java.lang.String)
+    65:65:public java.util.Date getTime()
+    69:70:public void setTime(java.util.Date)
+com.example.communication.vo.User:
+    30:37:public User(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+    48:48:public java.lang.String getAlias()
+    72:72:public java.lang.String getHostName()

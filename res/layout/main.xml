@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:background="#AAFFA500"
+    android:orientation="vertical" > 
+ 
+   
+    <com.example.excelParser.MyViewFlipper
+        android:id="@+id/myViewFlipper" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:gravity="center" > 
+    </com.example.excelParser.MyViewFlipper> 
+ 
+</LinearLayout> 

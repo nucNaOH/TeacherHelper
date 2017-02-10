@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下面列出所有的excel文件："
+        android:textSize="20sp"/>
+    <ListView
+        android:id="@+id/list"
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:onClick="exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+        
+    </LinearLayout>
+
+</LinearLayout>

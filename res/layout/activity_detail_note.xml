@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/p11">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="标题"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_margin="5dp"
+        android:textSize="20sp"/>
+    
+    <TextView
+        android:id="@+id/showtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/title"
+         android:text="时间"
+        android:textSize="16sp"/>
+    
+    <TextView 
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showtime"
+        android:text="内容"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

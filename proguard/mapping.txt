@@ -1,0 +1,233 @@
+com.example.communication.activity.BaseActivity -> com.example.communication.activity.BaseActivity:
+    int notification_id -> c
+    android.app.NotificationManager mNotManager -> d
+    android.app.Notification mNotification -> e
+    java.util.LinkedList queue -> a
+    com.example.communication.net.NetThreadHelper netThreadHelper -> b
+    android.os.Handler handler -> f
+    void onCreate(android.os.Bundle) -> onCreate
+    void sendEmptyMessage(int) -> a
+    void sendMessage(android.os.Message) -> a
+    void finish() -> finish
+    void makeTextShort(java.lang.String) -> a
+    void processMessage(android.os.Message) -> b
+    void showNotification() -> a
+    android.app.Notification access$0(com.example.communication.activity.BaseActivity) -> a
+com.example.communication.activity.BaseActivity$1 -> com.example.communication.activity.a:
+    void handleMessage(android.os.Message) -> handleMessage
+com.example.communication.activity.BaseActivity$1$1 -> com.example.communication.activity.b:
+    com.example.communication.activity.BaseActivity$1 this$1 -> a
+    java.lang.String[] val$extraMsg -> b
+    java.lang.String[] val$fileInfos -> c
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.example.communication.activity.BaseActivity$1$2 -> com.example.communication.activity.c:
+    com.example.communication.activity.BaseActivity$1 this$1 -> a
+    java.lang.String[] val$extraMsg -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.example.communication.activity.ChatActivity -> com.example.communication.activity.ChatActivity:
+    android.widget.TextView chat_name -> c
+    android.widget.TextView chat_group -> d
+    android.widget.Button chat_quit -> e
+    android.widget.ListView chat_list -> f
+    android.widget.EditText chat_input -> g
+    android.widget.Button chat_send -> h
+    java.util.List msgList -> i
+    java.lang.String receiverName -> j
+    java.lang.String receiverIp -> k
+    java.lang.String receiverGroup -> l
+    com.example.communication.adapter.ChatListAdapter adapter -> m
+    java.lang.String selfName -> n
+    java.lang.String selfGroup -> o
+    void onCreate(android.os.Bundle) -> onCreate
+    void processMessage(android.os.Message) -> b
+    boolean receive(com.example.communication.vo.MyMessage) -> a
+    void finish() -> finish
+    void onClick(android.view.View) -> onClick
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+com.example.communication.activity.FileActivity -> com.example.communication.activity.FileActivity:
+    java.lang.String path -> c
+    android.widget.ListView itemList -> d
+    android.widget.TextView filePath -> e
+    android.widget.Button sendButton -> f
+    android.os.Vibrator vibrator -> g
+    java.util.List adapterList -> h
+    java.lang.StringBuffer filePaths -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    void reConstructList(java.lang.String) -> b
+    boolean checkEndName(java.lang.String,java.lang.String[]) -> a
+    void showAllFiles(java.io.File) -> a
+    void onClick(android.view.View) -> onClick
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    boolean onItemLongClick(android.widget.AdapterView,android.view.View,int,long) -> onItemLongClick
+    void processMessage(android.os.Message) -> b
+    void onStop() -> onStop
+    java.lang.String access$0(com.example.communication.activity.FileActivity) -> a
+    java.lang.StringBuffer access$1(com.example.communication.activity.FileActivity) -> b
+com.example.communication.activity.FileActivity$1 -> com.example.communication.activity.d:
+    com.example.communication.activity.FileActivity this$0 -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+com.example.communication.activity.FileActivity$2 -> com.example.communication.activity.e:
+    com.example.communication.activity.FileActivity this$0 -> a
+    java.io.File val$file -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.example.communication.activity.MainActivity -> com.example.communication.activity.MainActivity:
+    java.lang.String hostIp -> c
+    android.widget.ExpandableListView userList -> d
+    com.example.communication.adapter.UserExpandableListAdapter adapter -> e
+    java.util.List strGroups -> f
+    java.util.List children -> g
+    android.widget.TextView totalUser -> h
+    android.widget.Button refreshButton -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    void finish() -> finish
+    void processMessage(android.os.Message) -> b
+    void refreshViews() -> b
+    void onClick(android.view.View) -> onClick
+    void onBackPressed() -> onBackPressed
+com.example.communication.activity.MainActivity$1 -> com.example.communication.activity.f:
+    com.example.communication.activity.MainActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.example.communication.activity.MainActivity$2 -> com.example.communication.activity.g:
+    com.example.communication.activity.MainActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.example.communication.activity.SplashscreenActivity -> com.example.communication.activity.SplashscreenActivity:
+    boolean isInit -> a
+    android.os.Handler mHandler -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean access$0(com.example.communication.activity.SplashscreenActivity) -> a
+    android.os.Handler access$1(com.example.communication.activity.SplashscreenActivity) -> b
+com.example.communication.activity.SplashscreenActivity$1 -> com.example.communication.activity.h:
+    com.example.communication.activity.SplashscreenActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.example.communication.activity.SplashscreenActivity$Monitor -> com.example.communication.activity.i:
+    com.example.communication.activity.SplashscreenActivity this$0 -> a
+    void run() -> run
+com.example.communication.adapter.ChatListAdapter -> com.example.communication.a.a:
+    android.view.LayoutInflater mInflater -> a
+    java.util.List msgList -> b
+    android.content.res.Resources res -> c
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.example.communication.adapter.UserExpandableListAdapter -> com.example.communication.a.b:
+    android.content.Context context -> d
+    android.content.res.Resources res -> a
+    android.view.LayoutInflater mChildInflater -> e
+    android.view.LayoutInflater mGroupInflater -> f
+    java.util.List groups -> b
+    java.util.List children -> c
+    java.lang.Object getChild(int,int) -> getChild
+    long getChildId(int,int) -> getChildId
+    android.view.View getChildView(int,int,boolean,android.view.View,android.view.ViewGroup) -> getChildView
+    int getChildrenCount(int) -> getChildrenCount
+    java.lang.Object getGroup(int) -> getGroup
+    int getGroupCount() -> getGroupCount
+    long getGroupId(int) -> getGroupId
+    android.view.View getGroupView(int,boolean,android.view.View,android.view.ViewGroup) -> getGroupView
+    boolean hasStableIds() -> hasStableIds
+    boolean isChildSelectable(int,int) -> isChildSelectable
+    android.content.Context access$0(com.example.communication.adapter.UserExpandableListAdapter) -> a
+com.example.communication.adapter.UserExpandableListAdapter$1 -> com.example.communication.a.c:
+    com.example.communication.adapter.UserExpandableListAdapter this$0 -> a
+    com.example.communication.vo.User val$user -> b
+    android.widget.TextView val$childInfoNo -> c
+    void onClick(android.view.View) -> onClick
+com.example.communication.net.NetThreadHelper -> com.example.communication.b.a:
+    com.example.communication.net.NetThreadHelper instance -> a
+    boolean onWork -> b
+    java.lang.String selfName -> c
+    java.lang.String selfGroup -> d
+    java.lang.Thread udpThread -> e
+    java.net.DatagramSocket udpSocket -> f
+    java.net.DatagramPacket udpSendPacket -> g
+    java.net.DatagramPacket udpResPacket -> h
+    byte[] resBuffer -> i
+    byte[] sendBuffer -> j
+    java.util.Map users -> k
+    int userCount -> l
+    java.util.Queue receiveMsgQueue -> m
+    java.util.Vector listeners -> n
+    com.example.communication.net.NetThreadHelper newInstance() -> a
+    java.util.Map getUsers() -> b
+    java.util.Queue getReceiveMsgQueue() -> c
+    void addReceiveMsgListener(com.example.communication.util.ReceiveMsgListener) -> a
+    void removeReceiveMsgListener(com.example.communication.util.ReceiveMsgListener) -> b
+    boolean receiveMsg(com.example.communication.vo.MyMessage) -> a
+    void noticeLine(java.lang.String) -> a
+    void refreshUsers() -> d
+    boolean connectSocket() -> e
+    void disconnectSocket() -> f
+    void sendUdpData(java.lang.String,java.net.InetAddress,int) -> a
+    void addUser(com.example.communication.util.CommunicationProtocol) -> a
+    void run() -> run
+com.example.communication.net.TcpFileReceiveThread -> com.example.communication.b.b:
+    java.lang.String[] fileInfos -> b
+    java.lang.String senderIp -> c
+    long packetNo -> d
+    java.lang.String savePath -> e
+    java.lang.String selfName -> f
+    java.lang.String selfGroup -> g
+    java.net.Socket socket -> h
+    java.io.BufferedInputStream bis -> i
+    java.io.BufferedOutputStream bos -> j
+    java.io.BufferedOutputStream fbos -> a
+    byte[] readBuffer -> k
+    void run() -> run
+com.example.communication.net.TcpFileSendThread -> com.example.communication.b.c:
+    java.lang.String[] filePathArray -> b
+    java.net.ServerSocket server -> a
+    java.net.Socket socket -> c
+    byte[] readBuffer -> d
+    void run() -> run
+com.example.communication.util.CommunicationProtocol -> com.example.communication.c.a:
+    java.lang.String version -> a
+    java.lang.String packetNo -> b
+    java.lang.String senderName -> c
+    java.lang.String senderHost -> d
+    int commandNo -> e
+    java.lang.String additionalSection -> f
+    java.lang.String getProtocolString() -> a
+    void setVersion(java.lang.String) -> a
+    java.lang.String getPacketNo() -> b
+    java.lang.String getSenderName() -> c
+    void setSenderName(java.lang.String) -> b
+    java.lang.String getSenderHost() -> d
+    void setSenderHost(java.lang.String) -> c
+    int getCommandNo() -> e
+    void setCommandNo(int) -> a
+    java.lang.String getAdditionalSection() -> f
+    void setAdditionalSection(java.lang.String) -> d
+com.example.communication.util.ReceiveMsgListener -> com.example.communication.c.b:
+    boolean receive(com.example.communication.vo.MyMessage) -> a
+com.example.communication.vo.MyMessage -> com.example.communication.d.a:
+    java.lang.String senderIp -> a
+    java.lang.String senderName -> b
+    java.lang.String msg -> c
+    java.util.Date time -> d
+    boolean selfMsg -> e
+    java.lang.String getSenderIp() -> a
+    java.lang.String getSenderName() -> b
+    java.lang.String getMsg() -> c
+    boolean isSelfMsg() -> d
+    void setSelfMsg$1385ff() -> e
+    java.lang.String getTimeStr() -> f
+com.example.communication.vo.User -> com.example.communication.d.b:
+    java.lang.String userName -> a
+    java.lang.String alias -> b
+    java.lang.String groupName -> c
+    java.lang.String ip -> d
+    java.lang.String hostName -> e
+    int msgCount -> f
+    java.lang.String getUserName() -> a
+    void setUserName(java.lang.String) -> a
+    void setAlias(java.lang.String) -> b
+    java.lang.String getGroupName() -> b
+    void setGroupName(java.lang.String) -> c
+    java.lang.String getIp() -> c
+    void setIp(java.lang.String) -> d
+    void setHostName(java.lang.String) -> e
+    int getMsgCount() -> d
+    void setMsgCount(int) -> a

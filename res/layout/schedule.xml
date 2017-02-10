@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/schedule_bk"
+    android:orientation="vertical" >
+
+      <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#8866ff00"
+        android:text="编辑事项"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="40dip" />
+
+    <com.pwp.borderText.BorderTextView
+        android:id="@+id/scheduleDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <com.pwp.borderText.BorderEditText
+        android:id="@+id/scheduleText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="5"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="请输入你的待办事项..."
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#000000" />
+
+    <com.pwp.borderText.BorderTextView
+        android:id="@+id/save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/top_day"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+    <!--
+  <Button
+      android:id="@+id/save"
+      android:gravity="center"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:text="SAVE"
+      
+  />
+    -->
+
+</LinearLayout>

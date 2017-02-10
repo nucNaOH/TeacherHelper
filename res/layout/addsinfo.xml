@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/sname"
+        android:paddingTop="5dip"
+       android:layout_marginLeft="3dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学生姓名：" />
+
+    <EditText
+        android:id="@+id/edsname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/pname"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edpname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edsname"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/pname"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/phonenumber"
+        android:layout_marginLeft="3dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edpname"
+        android:text="联系电话：" />
+
+    <EditText
+        android:id="@+id/ednumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edpname"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/phonenumber"
+        android:ems="10"
+        android:inputType="phone"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_marginLeft="3dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ednumber"
+        android:text="家庭住址：" />
+
+    <EditText
+        android:id="@+id/edaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ednumber"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/address"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/beizhu"
+        android:layout_marginLeft="3dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edaddress"
+        android:text="备注：" />
+
+    <EditText
+        android:id="@+id/edbeizhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edaddress"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/beizhu"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:lines="7" />
+
+    <Button
+        android:id="@+id/save"
+        android:onClick="save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="保存" />
+
+    <TextView
+        android:id="@+id/pname"
+      android:gravity="center_vertical"
+        android:layout_marginLeft="3dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edsname"
+        android:text="家长姓名：" />
+
+</RelativeLayout>

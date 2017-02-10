@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bt_finishCallName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="直接结束点名"
+            android:visibility="visible"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_stu_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="你好"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="30dip"
+            android:background="#BB00FF00"
+            android:textSize="60dip" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dip"
+            android:gravity="center_horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_present"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:text="    已到"
+                android:textSize="25sp" />
+
+            <RadioButton
+                android:id="@+id/rb_absent "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:text="    没到"
+                android:textSize="25sp" />
+
+            <RadioButton
+                android:id="@+id/rb_leave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:text="    请假"
+                android:textSize="25sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+</ScrollView>

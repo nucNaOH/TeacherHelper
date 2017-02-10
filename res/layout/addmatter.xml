@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日期：" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:onClick="select1"
+            android:id="@+id/select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择" />
+
+        <TextView
+            android:id="@+id/textriqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间：" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:onClick="select2"
+            android:id="@+id/select1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择" />
+
+        <TextView
+            android:id="@+id/texttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </TextView>
+    </LinearLayout>
+  
+       
+    <EditText
+        android:id="@+id/editmatter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.67"
+        android:ems="10"
+        android:gravity="top"
+        android:lines="10"
+        android:inputType="textMultiLine" />
+
+   
+     
+    
+        
+        
+      
+    
+
+    <Button
+        android:onClick="save"
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存" />
+
+</LinearLayout>

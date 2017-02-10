@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/selectname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入姓名" />
+
+    <EditText
+        android:id="@+id/edsname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@+id/selectname"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:onClick="select"
+        android:id="@+id/select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edsname"
+        android:text="查找" />
+
+</RelativeLayout>

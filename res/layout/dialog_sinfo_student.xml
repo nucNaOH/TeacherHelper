@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+       android:layout_marginLeft="60dip"
+        android:id="@+id/look_sinfo"
+        android:textColor="#000000"
+        android:textSize="30dip"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看学生信息" />
+    <TextView
+        android:id="@+id/add_sinfo"
+         android:layout_marginLeft="60dip"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="30dip"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加学生信息" />
+    <TextView
+        android:id="@+id/delete_sinfo"
+         android:layout_marginLeft="60dip"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="30dip"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除学生信息" />
+
+</LinearLayout>
